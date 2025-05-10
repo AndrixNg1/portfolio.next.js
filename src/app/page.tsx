@@ -1,3 +1,4 @@
+// app/page.tsx
 import React from 'react';
 import { ThemeProvider } from '../context/ThemeContext';
 import Navbar from '../components/Navbar';
@@ -9,7 +10,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Services from '../components/Services';
 
-function App() {
+export default function Page() {
   return (
     <ThemeProvider>
       <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
@@ -25,5 +26,3 @@ function App() {
     </ThemeProvider>
   );
 }
-
-export default App;
